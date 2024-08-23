@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <section class="loginSection">
+      <h2>Log in to PingPong</h2>
+      <div> <span id="message1"> Don't have an Account? <button type="button" id="signUp">Sign up</button> </span> <span id="message2">Already have an account? Then click <button type="button" id="signIn">Here</button> to sign in </span> <span id="message3"> or continue as a <button type="button" id="guest">Guest</button></span> </div>
+      <form class="logInForm" method="post">
+        <div class="elementDiv">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="elementDiv">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="break"></div> <!-- break -->
+        <input type="submit" value="Sign in">
+      </form>
+      <form class="signupForm" method="post" >
+        <fieldset>
+          <legend>To register, enter the following details</legend>
+          <div class="elementDiv">
+            <label for="username">Enter your username: </label>
+            <input type="text" name="username" id="signupUsername" required />
+          </div>
+          <div class="elementDiv">
+            <label for="password">Enter your password: </label>
+            <input type="password" name="password" id="signupPassword" required />
+          </div>
+          <div class="elementDiv">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="signupEmail" required />
+          </div>
+          <div>
+            <input type="submit" value="Sign up" />
+          </div>
+        </fieldset>
+      </form>
+      <form class="guestForm" method="post">
+        <fieldset>
+          <legend>Please enter a temporary username.</legend>
+          <div class="elementDiv">
+            <label for="username">Guestname:</label>
+            <input type="text" name="username" id="guestUsername" required />
+          </div>
+          <div>
+            <input type="submit" value="Continue" />
+          </div>
+        </fieldset
+      </form>
+    </section>
+    <script src="frontpage.js"></script>
+  </body>
+</html>
